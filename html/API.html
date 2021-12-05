@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+
+<body>
+    <h1 id="anime"></h1>
+    <h2 id="char"></h2>
+    <p id="para"></p>
+    <button type="refresh" onclick=getData()>get new data </button>
+</body>
+<script>
+    var anime = document.getElementById("anime");
+    var char = document.getElementById("char");
+    var para = document.getElementById("para");
+
+    function getData() {
+        fetch('https://animechan.vercel.app/api/random')
+            .then(res => res.json())
+            .then(data => renderData(data))
+            .catch(error => console.error(err))
+
+    }
+    function renderData(data) {
+        console.log(data);
+        anime.innerHTML = data.anime;
+        char.innerHTML = data.character;
+        para.innerHTML = data.quote;
+    }
+
+
+</script>
+
+</html>

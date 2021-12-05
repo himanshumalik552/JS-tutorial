@@ -1,0 +1,31 @@
+.container{
+    background-color: aqua;
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 12px;
+}
+
+
+.item{
+    background: rgb(63, 58, 58);
+
+}
+.item1{
+    height: 500px;
+    background: rgb(68, 36, 36);
+    grid-row: 1;
+    grid-row-end: 4;
+    display: grid;
+    
+    row-gap: 12px;
+    column-gap: 12px;
+place-items: center;
+}
+.initem{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        
+        <span id="date"></span>
+        <span> Days</span>
+    </div>
+    <script>
+        var date1 = new Date();
+        var date2 = new Date("11/04/2021");
+        var diff = Math.abs(date2 - date1);
+        let Days = Math.floor(diff / (1000 * 60 * 60*24 ));
+        document.getElementById("date").innerHTML = Days;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- <body>
+    <div id="main"></div>
+    <img id="img" src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Newsletter/logo.png" alt="img" srcset="">
+</body>
+<script>
+    var images = document.getElementById("img")
+    // var images = document.getElementsByTagName("img");
+    var main = document.getElementById("main");
+
+    var element = document.createElement('a');
+    element.setAttribute("href", 'https://www.google.com/');
+    element.textContent = "link"
+    ;
+    //img.insertBefore(element, img.firstElementChild);
+main.appendChild(element);
+console.log(element.outerHTML);
+
+</script> -->
+
+
+<body>
+    <div>
+        <img id="image1"
+            src="https://static.remove.bg/remove-bg-web/f50bd6ad4990ff621deccea155ab762c39d8c77a/assets/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f39d2ec.png"
+            alt="">
+    </div>
+    <script>
+        const imgEle = document.getElementById('image1');
+        const ancrTag = document.createElement('a');
+        ancrTag.href = 'https://grorapid.com';
+        imgEle.parentElement.appendChild(ancrTag);
+        ancrTag.appendChild(imgEle);
+    </script>
+</body>
+
+
+</html>

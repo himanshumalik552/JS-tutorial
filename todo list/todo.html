@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .outer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .addBtn {
+            padding: 4px;
+            margin-left: 20px;
+            border: 2px solid blueviolet;
+            border-radius: 5px;
+            background-color: coral;
+            cursor: pointer;
+        }
+
+        #input {
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <h1>TodoList</h1>
+        <div class="inner">
+            <form action="">
+            <input type="=text"  id="value1" placeholder="value1">
+            <input type="=text"  id="value2" placeholder="value2">
+            <input type="button"  onclick="mul()" value="mul" id="add_btn" />
+                <p id="result"></p>
+                </form>
+        </div>
+        
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>
